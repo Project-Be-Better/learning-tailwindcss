@@ -2,53 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-image: url('assets/bg-tablet-pattern.svg');
-    background-repeat: repeat;
-    background-size: 800px;
-    background-position: 90% -25%;
-    background-position: 0%;
+@layer components {
+  code {
+    @apply font-mono text-sm bg-zinc-900 text-orange-400 p-1
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-zinc-50
+  }
+
+  main {
+    @apply mx-auto max-w-3xl ring-1 bg-zinc-900 ring-zinc-300/20 xl:max-w-5xl min-h-screen p-10
+  }
+
+  a {
+    @apply text-blue-400 hover:text-blue-500
+  }
+
+  button {
+    @apply bg-slate-500 hover:bg-slate-600 text-zinc-50 px-4 py-2 rounded-md
+  }
 }
 
-#cta{
-    background-image: url('assets/bg-simplify-section-desktop.svg');
-}
-
-@media(max-width:576px){
-    body{
-        background-position: 50px -50px;
-        background-size: 500px;
-    }
-    #cta{
-    background-image: url('assets/bg-simplify-section-mobile.svg');
-    background-repeat: no-repeat;
-
-}
-}
-/* Hamburger Menu */
-.hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.25s;
-  position: relative;
-}
-
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background: #000;
-  position: absolute;
-}
-
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-3xl ring-1 bg-zinc-900 ring-zinc-300/20 xl:max-w-5xl min-h-screen p-10
+  }
 }
