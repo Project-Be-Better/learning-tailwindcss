@@ -2,6 +2,7 @@
   "name": "learning-tailwindcss",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://sree-r-one.github.io/tailwindcss/",
   "type": "module",
   "scripts": {
     "dev": "vite",
